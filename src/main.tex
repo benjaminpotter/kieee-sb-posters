@@ -1,0 +1,95 @@
+\documentclass[20pt,letterpaper]{extarticle}
+
+% Load useful packages
+\usepackage{graphicx}  % For including images
+\usepackage{xcolor}    % For colored text
+\usepackage{geometry}  % For page layout
+\usepackage{tikz}      % For advanced layouts
+\usepackage{enumitem}  % For customizing lists
+\usepackage{qrcode}
+
+% Set page margins for a poster
+\geometry{margin=1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% POSTER CONTENT - Edit this section only
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Basic information
+\newcommand{\postertitle}{QRET Design Tour}
+\newcommand{\posterdate}{April 15, 2025}
+\newcommand{\postertime}{2:00 PM - 5:00 PM}
+\newcommand{\posterlocation}{Stirling Hall A}
+
+% Contact information
+\newcommand{\posteremail}{ben.potter@queensu.ca}
+\newcommand{\posterwebsite}{www.ieee.org}
+
+% Club information
+\newcommand{\clubname}{Queen's IEEE Branch}
+\newcommand{\clublogo}{IEEEkingston-1024x454.jpg}  % Path to club logo image
+
+% Event description
+\newcommand{\shortdescription}{Join us for our annual Spring Club Fair!}
+\newcommand{\bulletpoints}{
+  \item Sign up for membership and learn about our upcoming events
+  \item Meet current club members and ask questions
+  \item Enjoy free refreshments and giveaways
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% POSTER LAYOUT - Don't edit below this line unless changing design
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{blue}{HTML}{00629B}
+
+\begin{document}
+\thispagestyle{empty}
+
+% Create a colorful header
+\begin{center}
+  {\color{blue}\LARGE\textbf{\postertitle}} 
+
+  \vspace{0.5cm}
+
+  {presented by}
+
+  \vspace{0.25cm}
+
+  {\large\textbf{\clubname}}
+
+  \vspace{0.5cm}
+  
+  \textbf{\posterdate} \\
+  \textbf{\postertime} \\ 
+  \textbf{\posterlocation}
+  
+  \vspace{0.5cm}
+  
+  \textit{\shortdescription}
+  
+\end{center}
+
+\begin{center}
+  \begin{minipage}{0.45\textwidth}
+    \begin{itemize}[leftmargin=1cm, itemsep=0.5cm]
+      \bulletpoints
+    \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \begin{center}
+      \qrcode[height=\textwidth]{\posterwebsite}
+      
+      \vspace{0.5cm}
+
+      RSVP using this QR code.
+    \end{center}
+  \end{minipage}
+\end{center}
+
+\vfill
+\begin{center}
+  \includegraphics[height=0.1\paperheight]{\clublogo}
+\end{center}
+\end{document}
